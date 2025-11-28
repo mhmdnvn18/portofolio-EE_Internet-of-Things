@@ -32,7 +32,7 @@
     <div class="group-block">
         <h2>Embed Project</h2>
         <div class="embed-flex">
-            <div class="embed-card">
+            <div class="embed-card" data-url="https://mhmdnvn18.github.io/MATKUL_Instalasi-Listrik-Modern/">
                 <div class="certificate-card" style="padding:0;">
                     <div class="certificate-content">
                         <div class="card-title">MATKUL Instalasi Listrik Modern</div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="embed-card">
+            <div class="embed-card" data-url="https://mhmdnvn18.github.io/PROJECT_AutoCad/">
                 <div class="certificate-card" style="padding:0;">
                     <div class="certificate-content">
                         <div class="card-title">PROJECT AutoCad</div>
@@ -79,4 +79,16 @@
 </div>
 <div class="footer">&copy; Portofolio Proyek</div>
 </body>
+<script>
+// Membuat seluruh area card bisa diklik
+document.querySelectorAll('.embed-card[data-url]').forEach(function(card) {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e) {
+        // Cegah klik pada link di dalam card agar tidak double
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        const url = card.getAttribute('data-url');
+        if (url) window.open(url, '_blank');
+    });
+});
+</script>
 </html>
