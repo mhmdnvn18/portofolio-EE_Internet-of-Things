@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Portofolio Proyek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-left">
+        <h1>Portofolio Proyek</h1>
+        <div class="header-subtitle">
+            <p>Daftar Proyek &amp; Kompetensi</p>
+            <span class="version-badge">v2025.11.28</span>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="header-actions">
+            <a href="https://github.com/mhmdnvn18/PROJECT_AutoCad" target="_blank" class="github-link" title="Lihat di GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="Cari berdasarkan judul...">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="group-block">
+        <h2>Embed Project</h2>
+        <div class="embed-flex">
+            <div class="embed-card">
+                <div class="certificate-card" style="padding:0;">
+                    <div class="certificate-content">
+                        <div class="card-title">MATKUL Instalasi Listrik Modern</div>
+                        <div class="card-meta">
+                            <a href="https://mhmdnvn18.github.io/MATKUL_Instalasi-Listrik-Modern/" target="_blank" style="color:#2563eb;text-decoration:underline;">Lihat Project</a>
+                        </div>
+                    </div>
+                    <div class="iframe-wrapper">
+                        <div class="iframe-loading" aria-label="Memuat..." tabindex="0"></div>
+                        <iframe src="https://mhmdnvn18.github.io/MATKUL_Instalasi-Listrik-Modern/" loading="lazy" style="width:100%;height:240px;border:none;border-top:1px solid #eee;" onload="this.previousElementSibling.style.display='none'"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="embed-card">
+                <div class="certificate-card" style="padding:0;">
+                    <div class="certificate-content">
+                        <div class="card-title">PROJECT AutoCad</div>
+                        <div class="card-meta">
+                            <a href="https://mhmdnvn18.github.io/PROJECT_AutoCad/" target="_blank" style="color:#2563eb;text-decoration:underline;">Lihat Project</a>
+                        </div>
+                    </div>
+                    <div class="iframe-wrapper">
+                        <div class="iframe-loading" aria-label="Memuat..." tabindex="0"></div>
+                        <iframe src="https://mhmdnvn18.github.io/PROJECT_AutoCad/" loading="lazy" style="width:100%;height:240px;border:none;border-top:1px solid #eee;" onload="this.previousElementSibling.style.display='none'"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="result-area"><!-- Daftar file akan di-render otomatis dari files.json --></div>
+</div>
+<!-- Modal Preview Universal -->
+<div id="universalModal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <span id="modalTitle">File Preview</span>
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+        <div class="modal-footer">
+            <!-- Tombol download dihapus -->
+        </div>
+    </div>
+</div>
+<div class="footer">&copy; Portofolio Proyek</div>
+</body>
+</html>
